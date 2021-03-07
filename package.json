@@ -3,14 +3,40 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "dev": "next dev",
+    "fix": "run-s fix:*",
+    "fix:js": "eslint --ext .js,.jsx,.ts,.tsx --fix .",
+    "fix:css": "stylelint --fix **/*.css",
+    "format": "prettier --write",
+    "lint": "run-s lint:*",
+    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:css": "stylelint **/*.css",
     "start": "next start"
   },
   "dependencies": {
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.11.9",
+    "@testing-library/react": "11.2.5",
+    "babel-jest": "26.6.3",
+    "eslint": "7.21.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.1.6",
+    "eslint-plugin-jest-dom": "3.6.5",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.6.3",
+    "jest-watch-typeahead": "0.6.1",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.2.1",
+    "stylelint": "13.12.0",
+    "stylelint-config-standard": "21.0.0"
   },
   "engines": {
     "node": "15",
