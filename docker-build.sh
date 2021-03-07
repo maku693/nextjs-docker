@@ -2,6 +2,7 @@
 set -eux
 
 names=$(cat <<"EOF"
+alpine
 clean-cache
 install-production
 simple
