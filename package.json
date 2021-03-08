@@ -39,7 +39,7 @@
     "stylelint-config-standard": "21.0.0"
   },
   "engines": {
-    "node": "15",
+    "node": "14",
     "yarn": "1"
   }
 }
