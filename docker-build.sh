@@ -7,6 +7,8 @@ clean-cache
 install-production
 simple
 staged
+staged-debian-slim
+staged-distroless
 EOF)
 
 for name in $names; do
